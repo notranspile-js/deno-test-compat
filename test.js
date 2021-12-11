@@ -17,12 +17,10 @@
 import { describe, expect, it } from "./mod.js";
 
 describe("foo", () => {
-
   it("bar", () => {
     expect("foo").toEqual("foo");
   });
   it("bar", function () {
     expect([42, 43, 44]).toContain(42, 43, 44);
   });
-
 });
