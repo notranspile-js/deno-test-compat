@@ -14,6 +14,7 @@
  * limitations under the License.
  */
 
-const describe = Deno.test;
-
-export default describe;
+export default function it(label, func) {
+  console.log(`test: ${label}`);
+  func(() => {});
+};
